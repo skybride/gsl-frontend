@@ -1,0 +1,22 @@
+<div class="container">
+    <br>
+    <h3>Products</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Target Date</th>
+          <th>Available</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <td>{{item.itemName}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.targetDate | date}} </td>
+          <button class="btn btn-info">Snag It</button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
